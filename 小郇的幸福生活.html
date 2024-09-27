@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            font-size: 12px;
+            color: #c4c4c4;
+        }
+        .top p {
+            margin-right: 20%;
+        }
+        ul {
+            display: flex;
+        }
+        ul li {
+            list-style-type: none;
+            border-right: 1px solid #c4c4c4;
+        }
+        ul li:last-child {
+            border-right: none;
+        }
+        ul a {
+            color:#c4c4c4;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            line-height: 40px;
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            font-size: 12px;
+            color: #c4c4c4;
+        }
+        
+        html,body {
+            height: 100%;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .shop {
+            margin: auto;
+            width: 930px;
+            flex: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            width: 100%;
+            position: sticky;
+            border-radius: 0 0 8px 8px;
+            background-color: white;
+            top: 0px;
+        }
+        .search form{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #2f5df2;
+            border-radius: 100px;
+            width: 400px;
+            height: 26px;
+        }
+        
+        .header input {
+            border: none;
+            border-radius: 26px;
+        }
+        .header input[type="text"] {
+            width: 80%;
+            margin: 0 10px;
+            font-size: 12px;
+        }
+        .header input[type="submit"] {
+            width:20%;
+            color: #fff;
+            background-color: #2f5df2;
+        }
+
+        .banner {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .menu {
+            background-color: #2f5df2;
+            width: 20%;
+            height: 311px;
+        }
+        .ad {
+            width: 80%;
+            height: 311px;
+        }
+        .menu p,.menu a{
+            color:#fff;
+            text-decoration: none;
+            padding: 4px 0;
+            text-align: center;
+            font-size: 12px;
+        }
+        .menu a:hover {
+            color:#ff0;
+            cursor: pointer;
+        }
+
+        .food-title {
+            font-size: 25px;
+            color: #333
+        }
+        .container {
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+        }
+        .item img {
+            padding: 10px 0;
+            width: 100%;
+        }
+        .name {
+            color: #333;
+        }
+        .info {
+            color: #787878;
+        }
+        .level {
+            color: #e92845;
+            font-weight: 500;
+        }
+        .item {
+            font-size: 13px;
+            text-align: center;
+            background-color: #fff;
+            transition: all 0.3s;
+        }
+        .item:hover {
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 19px 39px 0 #999;
+            transform:translate(0 -4px);
+        }
+        .level span {
+            color: #787878;
+            text-decoration: line-through;
+            padding: 0 10px;
+            font-size: 12px;
+        }
+
+        .location {
+            position: fixed;
+            top: 200px;
+            right: 0;
+            width: 50px;
+            border: 1px solid #f4f4f4;
+            background-color: #fff;
+            padding: 10px;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 1px 4px 8px 0 #999;
+        }
+        .location div {
+            padding: 10px 0;
+            height: 25px;
+            border-bottom: 1px solid #787878;
+        }
+        .location a {
+            text-decoration: none;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <p>小郇的快乐生活</p>
+        <ul>
+            <li><a href="#">登录？</a></li>
+            <li><a href="#">注册？</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="shop">
+        <div class="header">
+            <div class="headshot">
+                <img src="用的照片/鸽子头像.jpg" alt="鸽子头像" width="70px" height="70px">
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="请输入搜索内容">
+                    <input type="submit" value="搜一搜">
+                </form>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="menu">
+                <p><a href="#">旅游风景</a>/<a href="#">家乡风光</a></p>
+                <p><a href="#">自制饮品</a>/<a href="#">自制甜点</a></p>
+                <p><a href="#">鹦鹉乐乐</a>/<a href="#">有趣表情</a></p>
+                <p><a href="#">温馨的家</a>/<a href="#">嘿嘿嘿嘿</a></p>
+                <p><a href="#">嘻嘻嘻嘻</a>/<a href="#">嘿嘿嘿嘿</a></p>
+                <p><a href="#">优质书籍</a>/<a href="#">品质一中</a></p>
+            </div>
+            <div class="ad">
+                <img src="用的照片/人皮缝合.jpg" height="311px">
+            </div>
+        </div>
+        <div class="goods">
+            <p class="food-title">好吃美食</p>
+            <div class="container">
+                <div class="item">
+                    <img src="用的照片/土豆泥.jpg">
+                    <p class="name">土豆泥与沙拉</p>
+                    <p class="info">土豆泥质感细腻</p>
+                    <p class="level">3</p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/小鸭与糖醋里脊.jpg">
+                    <p class="name">糖醋里脊</p>
+                    <p class="info">有点硬肉很足面衣薄</p>
+                    <p class="level">4</p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/茄子.jpg">
+                    <p class="name">芝士炖茄子</p>
+                    <p class="info">茄子味有点怪</p>
+                    <p class="level">2</p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/虾与生菜.jpg">
+                    <p class="name">虾与沙拉</p>
+                    <p class="info">虾特别好吃</p>
+                    <p class="level">5</p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/蛋炒饭.jpg">
+                    <p class="name">蛋炒饭金针菇</p>
+                    <p class="info">平凡蛋炒饭和金针菇配潦草料汁</p>
+                    <p class="level">3</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="goods">
+            <p class="food-title">好玩玩具</p>
+            <div class="container">
+                <div class="item">
+                    <img src="用的照片/大黄.jpg">
+                    <p class="name">大狗大黄</p>
+                    <p class="info">高颜值有资历且好睡</p>
+                    <p class="level">5<span>4</span></p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/松鼠.jpg">
+                    <p class="name">松鼠无名氏</p>
+                    <p class="info">扁平适合再课桌上睡</p>
+                    <p class="level">4<span>3</span></p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/第一嘴.jpg">
+                    <p class="name">胖鹦鹉第一嘴</p>
+                    <p class="info">好心的钢琴老师送的</p>
+                    <p class="level">3<span>4</span></p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/小熊.jpg">
+                    <p class="name">山大小熊</p>
+                    <p class="info">山大文创咖啡馆的常驻民</p>
+                    <p class="level">3<span>2</span></p>
+                </div>
+                <div class="item">
+                    <img src="用的照片/恐龙小鸭.jpg">
+                    <p class="name">恐龙啊呜和白色鸭鸭</p>
+                    <p class="info">平平无奇龙与莫名好玩鸭</p>
+                    <p class="level">2<span>3</span></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="location">
+            <div>
+                <a href="#">
+                    <span>联系小郇</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span>下载APP</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <span>新人有礼</span>
+                </a>    
+            </div>
+            <div>
+                <a href="#">
+                    <span>关注消息</span>
+                </a>
+            </div>
+            <div>
+                <a href="#top">
+                    <span>回到顶部</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">小郇精选</div>
+</body>
+</html>
